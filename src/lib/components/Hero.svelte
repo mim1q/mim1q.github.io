@@ -1,58 +1,50 @@
 <style lang="scss">
-  h1 {
-    grid-area: title;
-    display: inline-flex;
-    align-items: flex-end;
-    margin: 0px;
-
-    font-family: 'Montserrat';
-    font-weight: 900;
-    font-size: 4rem;
-    font-style: normal;
-    letter-spacing: 0.05rem;
+  .hero-container {
+    display: flex;
+    align-items: center;
+    margin-right: 128px;
   }
 
-  .subtitle {
-    grid-area: subtitle;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    font-family: 'Open Sans';
-    letter-spacing: 0.05rem;
-    line-height: 1.25em;
-
-    & p {
-      margin-bottom: 0px;
-    }
+  .title-container {
+    max-width: 600px;
   }
 
   img {
-    grid-area: logo;
-    width: 256px;
-    height: 256px;
+    margin: 8px;
+    width: 240px;
+    height: 240px;
   }
 
-  .header-container {
-    display: grid;
-    grid-template-rows: 128px 128px;
-    grid-template-columns: 256px 1fr;
-    grid-template-areas:
-      'logo title'
-      'logo subtitle';
+  h1 {
+    margin: 0px;
 
-    padding-right: 128px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  @media screen and (max-width: 960px) {
+    .hero-container {
+      flex-direction: column;
+      margin-right: 0px;
+      text-align: center;
+    }
   }
 </style>
 
-<div class="header-container">
+<div class="hero-container">
   <img src="./favicon.png" alt="Logo" />
-  <h1>Hello, I'm Dominik!</h1>
-  <span class="subtitle">
-    <p>
-      Online, I go by Mim1q. I'm a hobbyist programmer who loves to create cool things <br />
-      I'm the author of several popular Minecraft mods for the Fabric mod loader <br />
-    </p>
-    <p>My preferred languages are: Java, Python and TypeScript</p>
-  </span>
+  <div class="title-container">
+    <h1>Hello, I'm Dominik!</h1>
+    <span class="subtitle">
+      <p>
+        Online, I go by Mim1q. I'm a hobbyist programmer and artist who loves to create cool things.
+        I'm the author of several popular Minecraft mods for the Fabric mod loader. <br />
+      </p>
+      <p>My preferred languages are: Java, Kotlin, Python and TypeScript</p>
+    </span>
+  </div>
 </div>
