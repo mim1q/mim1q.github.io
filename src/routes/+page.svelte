@@ -1,5 +1,6 @@
 <script>
   import Hero from '$lib/components/Hero.svelte';
+  import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <style lang="scss">
@@ -7,10 +8,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    min-height: 850px;
   }
 </style>
 
 <main>
   <Hero />
 </main>
+<Footer />

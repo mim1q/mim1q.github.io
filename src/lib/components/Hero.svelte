@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     margin-right: 128px;
+    margin-top: 2rem;
   }
 
   .title-container {
