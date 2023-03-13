@@ -2,7 +2,7 @@
   .hero-container {
     display: flex;
     align-items: center;
-    margin-right: 128px;
+    margin-right: 3%;
     margin-top: 2rem;
   }
 
@@ -11,9 +11,12 @@
   }
 
   img {
+    border-radius: 1rem;
     margin: 8px;
+    margin-right: 3rem;
     width: 240px;
     height: 240px;
+    box-shadow: 0.5rem 0.5rem 16px #00000080;
   }
 
   h1 {
@@ -23,21 +26,29 @@
     font-size: 3rem;
   }
 
-  p {
-    font-family: 'Open Sans', sans-serif;
-  }
-
   @media screen and (max-width: 960px) {
     .hero-container {
       flex-direction: column;
       margin-right: 0px;
       text-align: center;
     }
+
+    .title-container {
+      padding: 0px 1em;
+    }
+
+    h1 {
+      font-size: min(8vw, 3rem);
+    }
+
+    img {
+      margin: 2rem;
+    }
   }
 </style>
 
 <div class="hero-container">
-  <img src="./favicon.png" alt="Logo" />
+  <img src="./avatar.png" alt="Mim1q's Avatar" />
   <div class="title-container">
     <h1>Hello, I'm Dominik!</h1>
     <span class="subtitle">
