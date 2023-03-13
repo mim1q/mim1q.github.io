@@ -33,6 +33,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
+    "@fontsource/montserrat": "^4.5.14",
     "@fontsource/open-sans": "^4.5.14"
   }
 }
