@@ -1,5 +1,4 @@
 <script>
-  import Hero from '$lib/components/Hero.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import Navbar from '$lib/components/Navbar.svelte';
 </script>
@@ -14,8 +13,6 @@
   }
 </style>
 
-<Navbar current_page="Home" />
-<main>
-  <Hero />
-</main>
+<Navbar current_page="Contact" />
+<main>Page content</main>
 <Footer />

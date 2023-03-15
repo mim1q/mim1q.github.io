@@ -32,18 +32,17 @@
 
   nav {
     position: fixed;
-    top: 0px;
+    top: -16rem;
     left: 0px;
     right: 0px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0.5rem 16px #00000080;
     background: linear-gradient(#111013ff, #111013f5);
-    transition: transform 0.2s ease-in-out;
-    transform: translateY(-105%);
+    transition: top 0.2s ease-in-out;
 
     &.visible {
-      transform: translateY(0%);
+      top: 0%;
     }
   }
 

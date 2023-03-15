@@ -2,7 +2,12 @@
   import MediaQuery from 'svelte-media-queries';
   import MobileNavbar from './MobileNavbar.svelte';
 
-  export let pages: { title: string; path: string }[];
+  export let pages: { title: string; path: string }[] = [
+    { title: 'Home', path: '/' },
+    { title: 'My Projects', path: '/projects' },
+    { title: 'Commissions', path: '/commissions' },
+    { title: 'Contact', path: '/contact' },
+  ];
   export let current_page = 'Home';
 </script>
 
@@ -31,12 +36,13 @@
 
     &.active {
       background-color: #ffffff05;
+      color: rgb(56, 195, 54);
       &::after {
         content: '';
         display: block;
         width: 100%;
-        border-bottom: 3px solid rgb(56, 129, 54);
-        margin-bottom: -3px;
+        border-bottom: 3px solid rgb(56, 195, 54);
+        margin-top: -3px;
       }
     }
 
@@ -50,9 +56,9 @@
   }
 </style>
 
-<MediaQuery query="(max-width: 960px)" let:matches>
-  {#if matches}
-    <MobileNavbar {pages} />
+<MediaQuery query="(min-width: 961px)" let:matches>
+  {#if !matches}
+    <MobileNavbar {pages} {current_page} />
   {:else}
     <nav>
       {#each pages as page}
