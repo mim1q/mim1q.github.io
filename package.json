@@ -26,6 +26,7 @@
     "prettier-plugin-svelte": "^2.8.1",
     "svelte": "^3.54.0",
     "svelte-check": "^3.0.1",
+    "svelte-media-queries": "^1.5.4",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
@@ -34,6 +35,7 @@
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/montserrat": "^4.5.14",
-    "@fontsource/open-sans": "^4.5.14"
+    "@fontsource/open-sans": "^4.5.14",
+    "svelte-icons": "^2.1.0"
   }
 }

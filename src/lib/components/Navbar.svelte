@@ -1,4 +1,7 @@
 <script lang="ts">
+  import MediaQuery from 'svelte-media-queries';
+  import MobileNavbar from './MobileNavbar.svelte';
+
   export let pages: { title: string; path: string }[];
   export let current_page = 'Home';
 </script>
@@ -47,8 +50,14 @@
   }
 </style>
 
-<nav>
-  {#each pages as page}
-    <a class:active={current_page == page.title} href={page.path}>{page.title}</a>
-  {/each}
-</nav>
+<MediaQuery query="(max-width: 960px)" let:matches>
+  {#if matches}
+    <MobileNavbar {pages} />
+  {:else}
+    <nav>
+      {#each pages as page}
+        <a class:active={current_page == page.title} href={page.path}>{page.title}</a>
+      {/each}
+    </nav>
+  {/if}
+</MediaQuery>
