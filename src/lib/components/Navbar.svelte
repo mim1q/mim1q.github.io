@@ -35,7 +35,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &.active {
-      background-color: #ffffff05;
+      background-color: #ffffff10;
       color: var(--accent-color);
       &::after {
         content: '';
@@ -47,11 +47,11 @@
     }
 
     &:hover {
-      background-color: #ffffff05;
+      background-color: #ffffff10;
     }
 
     &:focus {
-      background-color: #ffffff10;
+      background-color: #ffffff15;
     }
   }
 </style>
