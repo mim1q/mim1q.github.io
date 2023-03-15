@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 5rem;
-    box-shadow: 0px -0.5rem 16px #00000080;
+    box-shadow: 0px -0.5rem 16px var(--shadow-color);
   }
 </style>
 

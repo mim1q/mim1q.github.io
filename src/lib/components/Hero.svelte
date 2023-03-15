@@ -16,14 +16,18 @@
     margin-right: 3rem;
     width: 240px;
     height: 240px;
-    box-shadow: 0.5rem 0.5rem 16px #00000080;
+    box-shadow: 0.5rem 0.5rem 16px var(--shadow-color);
   }
 
   h1 {
     margin: 0px;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--title-font);
     font-size: 3rem;
+  }
+
+  .name {
+    color: var(--accent-color);
   }
 
   @media screen and (max-width: 960px) {
@@ -50,11 +54,12 @@
 <div class="hero-container">
   <img src="./avatar.png" alt="Mim1q's Avatar" />
   <div class="title-container">
-    <h1>Hello, I'm Dominik!</h1>
+    <h1>Hello, I'm <span class="name">Dominik</span>!</h1>
     <span class="subtitle">
       <p>
         Online, I go by Mim1q. I'm a hobbyist programmer and artist who loves to create cool things.
-        I'm the author of several popular Minecraft mods for the Fabric mod loader. <br />
+        I'm the author of several popular Minecraft mods for the Fabric mod loader.
+        <br />
       </p>
       <p>My preferred languages are: Java, Kotlin, Python and TypeScript</p>
     </span>

@@ -21,10 +21,7 @@
     width: 3rem;
     height: 3rem;
 
-    font-family: 'Montserrat';
-    font-weight: 900;
-    font-size: 2rem;
-    color: #e1dfe4;
+    color: var(--text-color);
     background-color: transparent;
 
     cursor: pointer;
@@ -37,8 +34,8 @@
     right: 0px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0.5rem 16px #00000080;
-    background: linear-gradient(#111013ff, #111013f5);
+    box-shadow: 0px 0.5rem 16px var(--shadow-color);
+    background: var(--bg-color);
     transition: top 0.2s ease-in-out;
 
     &.visible {
@@ -52,14 +49,14 @@
     line-height: 4rem;
     text-align: left;
 
-    font-family: 'Montserrat';
-    color: #e1dfe4;
+    font-family: var(--title-font);
+    color: var(--text-color);
     text-decoration: none;
     padding-left: 2rem;
 
     &.active {
       padding-left: calc(2rem - 6px);
-      border-left: 6px solid rgb(56, 129, 54);
+      border-left: 6px solid var(--accent-color);
     }
 
     &:focus {

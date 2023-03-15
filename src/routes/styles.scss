@@ -1,7 +1,16 @@
+:root {
+  --title-font: 'Montserrat', sans-serif;
+  --main-font: 'Open Sans', sans-serif;
+  --bg-color: #0f0a16;
+  --text-color: #e1dfe4;
+  --accent-color: #dfbf2e;
+  --shadow-color: #060308;
+}
+
 html,
 body {
-  background-color: #111013;
-  color: #e1dfe4;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;

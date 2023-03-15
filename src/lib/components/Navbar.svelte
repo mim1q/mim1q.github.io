@@ -18,7 +18,7 @@
     align-items: center;
     padding: 0 calc(50vw - 350px);
     margin-bottom: 1rem;
-    box-shadow: 0px 0.5rem 16px #00000080;
+    box-shadow: 0px 0.5rem 16px var(--shadow-color);
   }
 
   a {
@@ -27,21 +27,21 @@
     line-height: 4rem;
     text-align: center;
 
-    font-family: 'Montserrat';
+    font-family: var(--title-font);
     font-weight: 400;
-    color: #e1dfe4;
+    color: var(--text-color);
     text-decoration: none;
 
     transition: background-color 0.2s ease-in-out;
 
     &.active {
       background-color: #ffffff05;
-      color: rgb(56, 195, 54);
+      color: var(--accent-color);
       &::after {
         content: '';
         display: block;
         width: 100%;
-        border-bottom: 3px solid rgb(56, 195, 54);
+        border-bottom: 3px solid var(--accent-color);
         margin-top: -3px;
       }
     }
