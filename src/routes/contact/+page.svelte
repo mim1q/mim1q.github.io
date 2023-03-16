@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     height: 2em;
   }
 

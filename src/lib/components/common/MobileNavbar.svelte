@@ -29,7 +29,7 @@
 
   nav {
     position: fixed;
-    top: -16rem;
+    top: -20rem;
     left: 0px;
     right: 0px;
     display: flex;
