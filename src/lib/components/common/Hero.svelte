@@ -26,10 +26,6 @@
     font-size: 3rem;
   }
 
-  .name {
-    color: var(--accent-color);
-  }
-
   @media screen and (max-width: 960px) {
     .hero-container {
       flex-direction: column;
@@ -54,7 +50,7 @@
 <div class="hero-container">
   <img src="./avatar.png" alt="Mim1q's Avatar" />
   <div class="title-container">
-    <h1>Hello, I'm <span class="name">Dominik</span>!</h1>
+    <h1>Hello, I'm <span class="accent-color">Dominik</span>!</h1>
     <span class="subtitle">
       <p>
         Online, I go by Mim1q. I'm a hobbyist programmer and artist who loves to create cool things.

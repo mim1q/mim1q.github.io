@@ -6,6 +6,7 @@
     { title: 'Home', path: '/' },
     { title: 'My Projects', path: '/projects' },
     { title: 'Commissions', path: '/commissions' },
+    { title: 'Donate', path: 'https://ko-fi.com/mim1q' },
     { title: 'Contact', path: '/contact' },
   ];
   export let current_page = 'Home';
