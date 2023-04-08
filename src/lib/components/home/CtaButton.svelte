@@ -18,9 +18,16 @@
     font-family: var(--title-font);
     font-weight: 600;
 
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+
     &.full {
       background-color: var(--accent-color);
       color: var(--bg-color);
+    }
+
+    &:hover {
+      --accent-color: var(--text-color);
     }
   }
 </style>

@@ -33,10 +33,10 @@
     color: var(--text-color);
     text-decoration: none;
 
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
     &.active {
-      background-color: #ffffff10;
+      background-color: #fff5c610;
       color: var(--accent-color);
       &::after {
         content: '';
@@ -48,11 +48,12 @@
     }
 
     &:hover {
-      background-color: #ffffff10;
+      background-color: #fff5c610;
+      color: var(--accent-color);
     }
 
     &:focus {
-      background-color: #ffffff15;
+      background-color: #fff5c610;
     }
   }
 </style>

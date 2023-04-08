@@ -18,6 +18,7 @@
 
     @media screen and (max-width: 960px) {
       margin: 1rem 0px;
+      width: auto;
       justify-content: center;
     }
   }
