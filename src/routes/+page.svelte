@@ -28,8 +28,9 @@
 <Main>
   <Hero />
   <div class="cta-buttons">
-    <CtaButton text="See my projects" link="/projects" />
-    <CtaButton text="Donate" link="https://ko-fi.com/mim1q" full={false} />
+    <CtaButton text="Support me on Ko-Fi" link="https://ko-fi.com/mim1q" />
+    <CtaButton text="Contact me" link="/contact" full={false} />
   </div>
+  <h2 id="projects">My projects</h2>
 </Main>
 <Footer />
