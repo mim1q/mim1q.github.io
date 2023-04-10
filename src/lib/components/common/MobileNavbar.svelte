@@ -29,6 +29,8 @@
 
   nav {
     position: fixed;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
     top: -20rem;
     left: 0px;
     right: 0px;

@@ -29,7 +29,7 @@
 
 <style lang="scss">
   h1 {
-    margin-top: 3rem;
+    margin-top: 6rem;
     font-family: var(--title-font);
     font-size: min(3rem, 8vw);
     text-align: center;
@@ -56,6 +56,12 @@
 
   a {
     color: var(--text-color);
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05) translateY(-0.15rem);
+    }
   }
 
   @media screen and (max-width: 960px) {
