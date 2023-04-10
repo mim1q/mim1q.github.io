@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
 
-    min-height: calc(100vh - 10rem);
+    min-height: calc(100vh - 9rem);
 
     @media screen and (max-width: 960px) {
       min-height: calc(100vh - 5rem);
