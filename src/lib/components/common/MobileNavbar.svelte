@@ -25,6 +25,7 @@
     background-color: transparent;
 
     cursor: pointer;
+    z-index: 101;
   }
 
   nav {
@@ -40,13 +41,28 @@
     background: var(--bg-color);
     transition: top 0.2s ease-in-out;
 
+    z-index: 100;
+
     &.visible {
       top: 0%;
+
+      & + .fullscreen-dim {
+        opacity: 1;
+      }
     }
+  }
+
+  .fullscreen-dim {
+    position: fixed;
+    inset: 0;
+    background-color: var(--shadow-color);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
   }
 
   a {
     display: block;
+    position: relative;
     width: 100%;
     line-height: 4rem;
     text-align: left;
@@ -56,9 +72,15 @@
     text-decoration: none;
     padding-left: 2rem;
 
-    &.active {
-      padding-left: calc(2rem - 6px);
-      border-left: 6px solid var(--accent-color);
+    &.active::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 0 6px 6px 0;
+      width: 6px;
+      background-color: var(--accent-color);
     }
 
     &:focus {
@@ -72,6 +94,7 @@
     <a class:active={current_page == page.title} href={page.path}>{page.title}</a>
   {/each}
 </nav>
+<div class="fullscreen-dim" />
 <button on:click={switchVisible}>
   {#if visible}
     <MdClose />
