@@ -57,10 +57,11 @@
   a {
     color: var(--text-color);
     display: inline-block;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.05) translateY(-0.15rem);
+      color: var(--accent-color);
     }
   }
 
