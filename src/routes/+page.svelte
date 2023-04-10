@@ -4,6 +4,7 @@
   import Navbar from '$lib/components/common/Navbar.svelte';
   import Main from '$lib/components/common/Main.svelte';
   import CtaButton from '$lib/components/home/CtaButton.svelte';
+  import ProjectList from '$lib/components/home/ProjectList.svelte';
 </script>
 
 <style lang="scss">
@@ -17,7 +18,7 @@
     flex-wrap: wrap;
 
     @media screen and (max-width: 960px) {
-      margin: 1rem 0px;
+      margin-top: 1rem;
       width: auto;
       justify-content: center;
     }
@@ -31,6 +32,6 @@
     <CtaButton text="Support me on Ko-Fi" link="https://ko-fi.com/mim1q" />
     <CtaButton text="Contact me" link="/contact" full={false} />
   </div>
-  <h2 id="projects">My projects</h2>
+  <ProjectList />
 </Main>
 <Footer />
