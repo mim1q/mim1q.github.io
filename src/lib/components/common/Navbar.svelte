@@ -14,7 +14,6 @@
 <style lang="scss">
   nav {
     border-radius: 0 0 1rem 1rem;
-    border: 3px solid var(--shadow-color);
     border-top: none;
     display: flex;
     justify-content: space-between;

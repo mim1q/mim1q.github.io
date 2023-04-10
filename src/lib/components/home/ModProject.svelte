@@ -17,22 +17,44 @@
 <style lang="scss">
   .mod-project-container {
     display: flex;
-    max-width: 750px;
+    width: 750px;
     margin: 1rem 0;
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+      align-items: center;
+      width: min(500px, 70vw);
+      gap: 1rem;
+
+      & .mod-icon {
+        width: 128px;
+        height: 128px;
+      }
+
+      & .mod-title {
+        justify-content: center;
+      }
+
+      & .mod-nav {
+        justify-content: center;
+      }
+    }
   }
 
   .mod-icon {
     border-radius: 1rem;
     height: 192px;
+    width: 192px;
     margin-right: 1rem;
     box-shadow: 0.5rem 0.5rem 16px var(--shadow-color);
   }
 
   h3 {
-    font-size: min(8vw, 1.5rem);
+    font-size: min(5vw, 1.5rem);
     font-family: var(--title-font);
     margin: 0;
     margin-right: 0.5rem;
+    text-align: center;
   }
 
   .mod-title {
@@ -41,8 +63,9 @@
   }
 
   .download-count {
+    flex-shrink: 0;
     font-size: 1rem;
-    display: inline-flex;
+    display: flex;
     height: 1.5rem;
     opacity: 0.67;
   }
