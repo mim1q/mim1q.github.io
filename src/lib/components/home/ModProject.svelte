@@ -23,7 +23,7 @@
     @media screen and (max-width: 960px) {
       flex-direction: column;
       align-items: center;
-      width: min(500px, 70vw);
+      width: min(500px, calc(100vw - 2em));
       gap: 1rem;
 
       & .mod-icon {
@@ -72,6 +72,7 @@
 
   .mod-nav {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
