@@ -5,8 +5,11 @@
 <style lang="scss">
   .project-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 3rem;
+    gap: 1rem;
   }
 </style>
 
@@ -16,7 +19,7 @@
       icon: 'https://cdn.modrinth.com/data/9Qdvz1OV/6995132866962a61b21427d6fc1b74ce682a8446.png',
       title: 'Mine Cells',
       description:
-        'Mine Cells brings content from Dead Cells into Minecraft\nExplore new dimensions, fight challenging mobs and bosses using fun new weapons!',
+        'Mine Cells brings content from Dead Cells into Minecraft.\nExplore new dimensions, fight challenging mobs and bosses using fun new weapons!',
       modrinthId: 'minecells',
       curseforgeId: '618790',
       curseforgeSlug: 'minecells',
