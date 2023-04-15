@@ -9,14 +9,16 @@ export interface ModData {
   totalDownloads?: number;
 }
 
-const CURSEFORGE_API_PREFIX = 'https://api.cfwidget.com/minecraft/mc-mods/';
-const MODRINTH_API_PREFIX = 'https://api.modrinth.com/v2/project/';
+const URL = 'https://raw.githubusercontent.com/mim1q/DownloadCounter/master/output/mods.json';
 
 export async function populateTotalDownloads(data: ModData): Promise<ModData> {
-  const modrinthResponse = await fetch(MODRINTH_API_PREFIX + data.modrinthId);
-  const curseforgeResponse = await fetch(CURSEFORGE_API_PREFIX + data.curseforgeId);
-  const modrinthDownloads = (await modrinthResponse.json())['downloads'];
-  const curseforgeDownloads = (await curseforgeResponse.json())['downloads']['total'];
-  data.totalDownloads = parseInt(modrinthDownloads) + parseInt(curseforgeDownloads);
+  const response = await fetch(URL);
+  const mods = (await response.json())['mods'];
+  for (const mod of mods) {
+    if (mod['name'] == data.title) {
+      data.totalDownloads = parseInt(mod['downloads']);
+      return data;
+    }
+  }
   return data;
 }
